@@ -8,7 +8,7 @@
         :facebook-link="facebookLink"
         :tiktok-link="tiktokLink"
       />
-      <CarsBlock />
+      <CarsBlock  />
       <CTASection :contact="contact" :about-text="aboutText" />
       <FooterSection :instagram-link="instagramLink" />
     </main>
