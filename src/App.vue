@@ -8,7 +8,7 @@
         :facebook-link="facebookLink"
         :tiktok-link="tiktokLink"
       />
-      <CarsBlock  />
+      <CarsBlock :carsItemsList="carsItemsList" />
       <CTASection :contact="contact" :about-text="aboutText" />
       <FooterSection :instagram-link="instagramLink" />
     </main>
@@ -16,28 +16,50 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
 import HeaderSection from './components/HeaderSection.vue';
 import ContactActions from './components/ContactActions.vue';
 import CTASection from './components/CTASection.vue';
 import FooterSection from './components/FooterSection.vue';
 import CarsBlock from "./components/CarsBlock.vue";
 
-const phone = '+1234567890';
-const contact = {
-  name: 'Alex Goris',
-  title: 'Head of Global Partnerships',
-  company: 'ENVO Goris',
-  phoneRaw: phone,
-  email: 'alex.goris@envogoris.com',
-  address: 'Goris, Armenia',
-  website: 'https://www.instagram.com/envo_goris/'
-};
+// Reactive state populated from /data.json
+const contact = ref({
+  name: '',
+  title: '',
+  company: '',
+  phoneRaw: '',
+  email: '',
+  address: '',
+  website: ''
+});
+const aboutText = ref('');
+const instagramLink = ref('');
+const facebookLink = ref('');
+const tiktokLink = ref('');
+const carsItemsList = ref([]);
 
-const aboutText = 'ENVO focuses on advancing sustainable energy solutions by integrating clean technology, smart energy management, and strategic partnerships to reduce carbon footprint and accelerate the green transition.';
-
-const instagramLink = 'https://www.instagram.com/envo_goris/';
-const facebookLink = 'https://www.facebook.com/envo_goris';
-const tiktokLink = 'https://www.tiktok.com/@envo_goris';
+onMounted(async () => {
+  try {
+    const res = await fetch('/data.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error(`Failed to load data.json: ${res.status}`);
+    const data = await res.json();
+    if (data && typeof data === 'object') {
+      if (data.contact) contact.value = data.contact;
+      if (typeof data.aboutText === 'string') aboutText.value = data.aboutText;
+      if (typeof data.instagramLink === 'string') instagramLink.value = data.instagramLink;
+      if (typeof data.facebookLink === 'string') facebookLink.value = data.facebookLink;
+      if (typeof data.tiktokLink === 'string') tiktokLink.value = data.tiktokLink;
+      if (Array.isArray(data.carsItemsList)) {
+        console.log(data.carsItemsList);
+        carsItemsList.value = data.carsItemsList;
+        console.log(carsItemsList.value);
+      }
+    }
+  } catch (err) {
+    console.error(err);
+  }
+});
 </script>
 
 <style>

@@ -1,26 +1,41 @@
 {
-  "profile": {
-    "name": "HarMar",
-    "title": "Hotel",
-    "photo": "https://vcard.l4.am/pics/user_pics/200x200/20250619133043_458431_17006538.jpg",
-    "background": "https://vcard.l4.am/pics/bg_pics/resized/20250619132939_012438_95663747.jpg"
+  "contact": {
+    "name": "Alex Goris",
+    "title": "Head of Global Partnerships",
+    "company": "ENVO Goris",
+    "phoneRaw": "+1234567890",
+    "email": "alex.goris@envogoris.com",
+    "address": "Goris, Armenia",
+    "website": "https://www.instagram.com/envo_goris/"
   },
-  "langs": [
-    "AM",
-    "RU",
-    "EN"
-  ],
-  "contacts": [
-    { "label": "Phone", "link": "tel:+37441609090", "color": "#eeb65f", "icon": "📞" },
-    { "label": "SMS", "link": "sms:+37441609090", "color": "#eeb65f", "icon": "💬" },
-    { "label": "Email", "link": "mailto:reservation.harmar@gmail.com", "color": "#eeb65f", "icon": "✉️" },
-    { "label": "Telegram", "link": "https://t.me/harmarhotel", "color": "#0088cc", "icon": "📱" },
-    { "label": "WhatsApp", "link": "https://wa.me/37441609090", "color": "#25D366", "icon": "💬" },
-    { "label": "Instagram", "link": "https://instagram.com/harmarhotel", "color": "#E1306C", "icon": "📷" },
-    { "label": "Facebook", "link": "https://facebook.com/harmarhotel", "color": "#4267B2", "icon": "📘" },
-    { "label": "Website", "link": "https://harmarhotel.am", "color": "#0077b6", "icon": "🌐" },
-    { "label": "Maps", "link": "https://goo.gl/maps/example", "color": "#34A853", "icon": "📍" },
-    { "label": "YouTube", "link": "https://youtube.com/harmarhotel", "color": "#FF0000", "icon": "▶️" }
-  ],
-  "footer": "\u00a9 2025 HarMar Hotel. All rights reserved."
+  "aboutText": "ENVO focuses on advancing sustainable energy solutions by integrating clean technology, smart energy management, and strategic partnerships to reduce carbon footprint and accelerate the green transition.",
+  "instagramLink": "https://www.instagram.com/envo_goris/",
+  "facebookLink": "https://www.facebook.com/envo_goris",
+  "tiktokLink": "https://www.tiktok.com/@envo_goris",
+  "carsItemsList": [
+    {
+      "imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76",
+      "carName": "Car name",
+      "carNumber": "00oo000",
+      "carDriver": "Sevak T."
+    },
+    {
+      "imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76",
+      "carName": "Car name",
+      "carNumber": "00oo000",
+      "carDriver": "Sevak T."
+    },
+    {
+      "imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76",
+      "carName": "Car name",
+      "carNumber": "00oo000",
+      "carDriver": "Sevak T."
+    },
+    {
+      "imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76",
+      "carName": "Car name",
+      "carNumber": "00oo000",
+      "carDriver": "Sevak T."
+    }
+  ]
 }

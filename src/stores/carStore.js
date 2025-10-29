@@ -1,12 +1,12 @@
 import { defineStore } from 'pinia'
 
-export const showCarStore = defineStore('car', {
+export const showCarsStore = defineStore('car', {
     state: () => ({
         showCarsStatus: false
     }),
     actions: {
         showCars() {
-            this.showCars = !this.showCars
+            this.showCarsStatus = !this.showCarsStatus
         }
     }
 })

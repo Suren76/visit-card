@@ -1,11 +1,12 @@
 <template>
   <a
-      :href="href"
-      :target="target"
-      :rel="target === '_blank' ? 'noopener' : undefined"
+      :href="href || undefined"
+      :target="href ? target : undefined"
+      :rel="href && target === '_blank' ? 'noopener' : undefined"
      class="action-btn group flex flex-col items-center p-3
      rounded-lg bg-white border border-gray-100 hover:shadow-sm"
      :title="label"
+     @click="$emit('click', $event)"
   >
     <svg
         class="w-6 h-6 mb-1"
@@ -23,10 +24,10 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   href: {
     type: String,
-    required: true
+    default: ''
   },
   label: {
     type: String,
@@ -37,4 +38,5 @@ defineProps({
     default: ''
   }
 });
+const emit = defineEmits(['click']);
 </script>

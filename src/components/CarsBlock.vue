@@ -2,40 +2,63 @@
 <template>
 <div class=" pb-5 px-5">
   <transition
-      enter-active-class="transition-all duration-300 ease-out"
-      enter-from-class="max-h-0 opacity-0"
-      enter-to-class="max-h-screen opacity-100"
-      leave-active-class="transition-all duration-200 ease-in"
-      leave-from-class="max-h-screen opacity-100"
-      leave-to-class="max-h-0 opacity-0"
+      enter-active-class="transition duration-500 ease-out"
+      enter-from-class="opacity-0 -translate-y-2"
+      enter-to-class="opacity-100 translate-y-0"
+      leave-active-class="transition duration-300 ease-in"
+      leave-from-class="opacity-100 translate-y-0"
+      leave-to-class="opacity-0 -translate-y-2"
   >
-  <div
-      v-if="carStatusStore.showCarsStatus"
-      class="grid grid-cols-1 gap-3 container rounded"
-  >
-    <CarItem :imageUrl='imageUrl' />
-    <CarItem :imageUrl='imageUrl' />
-    <CarItem :imageUrl='imageUrl' />
-    <CarItem :imageUrl='imageUrl' />
-
-
-  </div>
+    <TransitionGroup
+        v-if="carStatusStore.showCarsStatus"
+        name="carlist"
+        tag="div"
+        class="grid grid-cols-1 gap-3 container rounded max-h-80 overflow-y-auto overflow-x-hidden pr-1"
+      >
+        <CarItem
+          v-for="carItem in carsItemsList" :key="carItem.imageUrl"
+          :imageUrl='carItem.imageUrl'
+          :car-driver='carItem.carDriver'
+          :car-name='carItem.carName'
+          :car-number='carItem.carNumber'
+        />
+    </TransitionGroup>
   </transition>
 </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import CarItem from "./CarItem.vue"
-import {showCarStore} from "../stores/carStore.js";
+import {showCarsStore} from "../stores/carStore.js";
 
+const props = defineProps({
+  carsItemsList: {
+    type: Array,
+    required: true
+  }
+});
 
-const imageUrl = 'https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76';
-
-const carStatusStore = showCarStore()
+// Keep props reactive: use computed to reference the array so updates from parent are reflected
+const carsItemsList = computed(() => props.carsItemsList);
+const carStatusStore = showCarsStore();
 
 </script>
 
 
 <style scoped>
-
+/* Per-item animation when the list opens/closes */
+.carlist-enter-active,
+.carlist-leave-active {
+  transition: all 1500ms ease;
+}
+.carlist-enter-from,
+.carlist-leave-to {
+  opacity: 0;
+  transform: translateY(300px);
+}
+/* Smoothly move items when their order/position changes */
+.carlist-move {
+  transition: transform 1200ms ease;
+}
 </style>

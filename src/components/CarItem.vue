@@ -3,8 +3,19 @@ const props = defineProps({
   imageUrl: {
     type: String,
     required: true
+  },
+  carName: {
+    type: String,
+    required: true,
+  },
+  carNumber: {
+    type: String,
+    required: true,
+  },
+  carDriver: {
+    type: String,
+    required: true,
   }
-
 });
 </script>
 
@@ -18,9 +29,9 @@ const props = defineProps({
         class="rounded-lg p-1"
     >
     <div class="details container mt-4 gap-3 text-xs text-gray-700">
-      <div class="car-name">Car name</div>
-      <div class="car-number">00oo000</div>
-      <div class="car-driver">Sevak T.</div>
+      <div class="car-name">{{carName}}</div>
+      <div class="car-number">{{carNumber}}</div>
+      <div class="car-driver">{{carDriver}}</div>
     </div>
   </div>
 </div>
