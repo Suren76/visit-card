@@ -2,41 +2,62 @@
 <template>
   <div class="px-5 pb-4">
     <div class="grid grid-cols-3 gap-3">
-      <ActionButton icon="phone" label="Call" :href="'tel:' + contact.phoneRaw">
+      <!-- Call primary -->
+      <ActionButton icon="phone" label="Call" :href="'tel:' + primaryPhone">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 1.08 4.18 2 2 0 0 1 3 2h3a2 2 0 0 1 2 1.72c.12 1.05.38 2.07.76 3.03a2 2 0 0 1-.45 2.11L7.31 11.7a16 16 0 0 0 6 6l1.84-1.84a2 2 0 0 1 2.11-.45c.96.38 1.98.64 3.03.76A2 2 0 0 1 22 16.92z" />
       </ActionButton>
-
-      <ActionButton icon="email" label="Email" :href="'mailto:' + contact.email">
-        <path d="M4 4h16v16H4z" stroke="none" fill="#fff" opacity="0"/>
-        <path d="M22 6L12 13 2 6" />
+      <!-- Call secondary (if present) -->
+      <ActionButton v-if="secondaryPhone" icon="phone" label="Call 2" :href="'tel:' + secondaryPhone">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 1.08 4.18 2 2 0 0 1 3 2h3a2 2 0 0 1 2 1.72c.12 1.05.38 2.07.76 3.03a2 2 0 0 1-.45 2.11L7.31 11.7a16 16 0 0 0 6 6l1.84-1.84a2 2 0 0 1 2.11-.45c.96.38 1.98.64 3.03.76A2 2 0 0 1 22 16.92z" />
       </ActionButton>
-
-      <ActionButton icon="sms" label="SMS" :href="'sms:' + contact.phoneRaw">
+      <!-- SMS primary -->
+      <ActionButton icon="sms" label="SMS" :href="'sms:' + primaryPhone">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
       </ActionButton>
-
-      <ActionButton icon="whatsapp" label="WhatsApp" :href="whatsappLink" target="_blank">
-        <path d="M21 11.5A9 9 0 1 0 10.5 21L7 22l1-3.5A9 9 0 0 0 21 11.5z" />
-        <path d="M17.5 13.5a2.5 2.5 0 0 1-3.5 0l-1-1" />
+      <!-- SMS secondary (if present) -->
+      <ActionButton v-if="secondaryPhone" icon="sms" label="SMS 2" :href="'sms:' + secondaryPhone">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
       </ActionButton>
-
+      <!-- Call secondary (if present) -->
+      <!-- Viber (primary) -->
       <ActionButton icon="viber" label="Viber" :href="viberLink" target="_blank">
         <path d="M2 12c0-5.52 4.48-10 10-10s10 4.48 10 10" />
         <path d="M2 12c0 5.52 4.48 10 10 10 1.66 0 3.24-.34 4.65-.94L22 22l-1.94-4.35" />
         <path d="M6 8c2.5 1.5 4.5 3.5 6 6" />
       </ActionButton>
-
+      <!-- Viber (secondary) -->
+      <ActionButton v-if="secondaryPhone" icon="viber" label="Viber 2" :href="viberLink2" target="_blank">
+        <path d="M2 12c0-5.52 4.48-10 10-10s10 4.48 10 10" />
+        <path d="M2 12c0 5.52 4.48 10 10 10 1.66 0 3.24-.34 4.65-.94L22 22l-1.94-4.35" />
+        <path d="M6 8c2.5 1.5 4.5 3.5 6 6" />
+      </ActionButton>
+      <!-- WhatsApp (primary) -->
+      <ActionButton icon="whatsapp" label="WhatsApp" :href="whatsappLink" target="_blank">
+        <path d="M21 11.5A9 9 0 1 0 10.5 21L7 22l1-3.5A9 9 0 0 0 21 11.5z" />
+        <path d="M17.5 13.5a2.5 2.5 0 0 1-3.5 0l-1-1" />
+      </ActionButton>
+      <!-- WhatsApp (secondary) -->
+      <ActionButton v-if="secondaryPhone" icon="whatsapp" label="WhatsApp 2" :href="whatsappLink2" target="_blank">
+        <path d="M21 11.5A9 9 0 1 0 10.5 21L7 22l1-3.5A9 9 0 0 0 21 11.5z" />
+        <path d="M17.5 13.5a2.5 2.5 0 0 1-3.5 0l-1-1" />
+      </ActionButton>
+      <!-- TikTok -->
       <ActionButton icon="tiktok" label="TikTok" :href="tiktokLink" target="_blank">
         <path d="M9 8v8a4 4 0 1 0 4-4V5h3" />
       </ActionButton>
-
+      <!-- Instagram -->
       <ActionButton icon="instagram" label="Instagram" :href="instagramLink" target="_blank">
         <rect x="3" y="3" width="18" height="18" rx="5" />
         <circle cx="12" cy="12" r="3" />
       </ActionButton>
-
+      <!-- Facebook -->
       <ActionButton icon="facebook" label="Facebook" :href="facebookLink" target="_blank">
         <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z"/>
+      </ActionButton>
+      <!-- Email -->
+      <ActionButton icon="email" label="Email" :href="'mailto:' + contact.email">
+        <path d="M4 4h16v16H4z" stroke="none" fill="#fff" opacity="0"/>
+        <path d="M22 6L12 13 2 6" />
       </ActionButton>
 
       <ActionButton
@@ -80,18 +101,42 @@ const props = defineProps({
   }
 });
 
+const phoneNumbers = computed(() => {
+  const arr = Array.isArray(props.contact.phoneNumbers) ? props.contact.phoneNumbers : [];
+  const combined = [props.contact.phoneRaw, ...arr].filter(Boolean);
+  const seen = new Set();
+  return combined.filter(n => {
+    const key = (n || '').trim();
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+});
+const primaryPhone = computed(() => phoneNumbers.value[0] || props.contact.phoneRaw || '');
+const secondaryPhone = computed(() => phoneNumbers.value[1] || '');
+
 const mapLink = computed(() => {
   return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(props.contact.address);
 });
 
 const whatsappLink = computed(() => {
-  const plain = props.contact.phoneRaw.replace(/\D/g, '');
-  return 'https://wa.me/' + plain;
+  const plain = (primaryPhone.value || '').replace(/\D/g, '');
+  return plain ? 'https://wa.me/' + plain : '#';
 });
 
 const viberLink = computed(() => {
-  const plain = props.contact.phoneRaw.replace(/\D/g, '');
-  return 'viber://chat?number=%2B' + plain;
+  const plain = (primaryPhone.value || '').replace(/\D/g, '');
+  return plain ? 'viber://chat?number=%2B' + plain : '#';
+});
+
+const whatsappLink2 = computed(() => {
+  const plain = (secondaryPhone.value || '').replace(/\D/g, '');
+  return plain ? 'https://wa.me/' + plain : '#';
+});
+
+const viberLink2 = computed(() => {
+  const plain = (secondaryPhone.value || '').replace(/\D/g, '');
+  return plain ? 'viber://chat?number=%2B' + plain : '#';
 });
 
 const carShowStatusStore = showCarsStore();

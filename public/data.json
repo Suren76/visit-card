@@ -1,41 +1,83 @@
 {
-  "contact": {
-    "name": "Alex Goris",
-    "title": "Head of Global Partnerships",
-    "company": "ENVO Goris",
-    "phoneRaw": "+1234567890",
-    "email": "alex.goris@envogoris.com",
-    "address": "Goris, Armenia",
-    "website": "https://www.instagram.com/envo_goris/"
+  "en": {
+    "contact": {
+      "name": "",
+      "title": "Le premium, c’est notre style",
+      "company": "ENVO",
+      "phoneRaw": "+37498982597",
+      "email": "alex.goris@envogoris.com",
+      "address": "Goris, Armenia",
+      "website": "https://www.instagram.com/envo_goris/",
+      "phoneNumbers": ["+37498982597", "+37498983597"]
+    },
+    "aboutText": "ENVO focuses on advancing sustainable energy solutions by integrating clean technology, smart energy management, and strategic partnerships to reduce carbon footprint and accelerate the green transition.",
+    "instagramLink": "https://www.instagram.com/envo_goris/",
+    "facebookLink": "https://www.facebook.com/profile.php?id=61580831261176",
+    "tiktokLink": "https://www.tiktok.com/@envo_goris",
+    "carsItemsList": [
+      {"imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76","carName": "Car name","carNumber": "00oo000","carDriver": "Sevak T."}
+    ],
+    "comment": [
+      {"imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76","carName": "Car name","carNumber": "00oo000","carDriver": "Sevak T."},
+      {"imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76","carName": "Car name","carNumber": "00oo000","carDriver": "Sevak T."},
+      {"imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76","carName": "Car name","carNumber": "00oo000","carDriver": "Sevak T."}
+    ]
   },
-  "aboutText": "ENVO focuses on advancing sustainable energy solutions by integrating clean technology, smart energy management, and strategic partnerships to reduce carbon footprint and accelerate the green transition.",
-  "instagramLink": "https://www.instagram.com/envo_goris/",
-  "facebookLink": "https://www.facebook.com/envo_goris",
-  "tiktokLink": "https://www.tiktok.com/@envo_goris",
-  "carsItemsList": [
-    {
-      "imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76",
-      "carName": "Car name",
-      "carNumber": "00oo000",
-      "carDriver": "Sevak T."
+  "hy": {
+    "contact": {
+      "name": "",
+      "title": "Le premium, c’est notre style",
+      "company": "ENVO",
+      "phoneRaw": "+37498982597",
+      "email": "alex.goris@envogoris.com",
+      "address": "Goris, Armenia",
+      "website": "https://www.instagram.com/envo_goris/",
+      "phoneNumbers": ["+37498982597", "+37498983597"]
     },
-    {
-      "imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76",
-      "carName": "Car name",
-      "carNumber": "00oo000",
-      "carDriver": "Sevak T."
+    "aboutText": "ENVO-ն կենտրոնանում է կայուն էներգետիկ լուծումների առաջխաղացման վրա՝ համակցելով մաքուր տեխնոլոգիաները, խելացի էներգիայի կառավարումը և ռազմավարական գործընկերությունները՝ ածխածնային հետքը նվազեցնելու և կանաչ անցումը արագացնելու համար։",
+    "instagramLink": "https://www.instagram.com/envo_goris/",
+    "facebookLink": "https://www.facebook.com/profile.php?id=61580831261176",
+    "tiktokLink": "https://www.tiktok.com/@envo_goris",
+    "carsItemsList": [
+      {"imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76","carName": "Ավտոմեքենայի անուն","carNumber": "00օօ000","carDriver": "Սևակ Թ."}
+    ]
+  },
+  "ru": {
+    "contact": {
+      "name": "",
+      "title": "Le premium, c’est notre style",
+      "company": "ENVO",
+      "phoneRaw": "+37498982597",
+      "email": "alex.goris@envogoris.com",
+      "address": "Goris, Armenia",
+      "website": "https://www.instagram.com/envo_goris/",
+      "phoneNumbers": ["+37498982597", "+37498983597"]
     },
-    {
-      "imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76",
-      "carName": "Car name",
-      "carNumber": "00oo000",
-      "carDriver": "Sevak T."
+    "aboutText": "ENVO сосредоточена на развитии устойчивых энергетических решений, объединяя чистые технологии, умное управление энергией и стратегические партнёрства для снижения углеродного следа и ускорения зелёного перехода.",
+    "instagramLink": "https://www.instagram.com/envo_goris/",
+    "facebookLink": "https://www.facebook.com/profile.php?id=61580831261176",
+    "tiktokLink": "https://www.tiktok.com/@envo_goris",
+    "carsItemsList": [
+      {"imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76","carName": "Название авто","carNumber": "00оо000","carDriver": "Севак Т."}
+    ]
+  },
+  "fr": {
+    "contact": {
+      "name": "",
+      "title": "Le premium, c’est notre style",
+      "company": "ENVO",
+      "phoneRaw": "+37498982597",
+      "email": "alex.goris@envogoris.com",
+      "address": "Goris, Armenia",
+      "website": "https://www.instagram.com/envo_goris/",
+      "phoneNumbers": ["+37498982597", "+37498983597"]
     },
-    {
-      "imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76",
-      "carName": "Car name",
-      "carNumber": "00oo000",
-      "carDriver": "Sevak T."
-    }
-  ]
+    "aboutText": "ENVO se concentre sur l'avancement des solutions énergétiques durables en intégrant les technologies propres, la gestion intelligente de l'énergie et des partenariats stratégiques afin de réduire l'empreinte carbone et d'accélérer la transition verte.",
+    "instagramLink": "https://www.instagram.com/envo_goris/",
+    "facebookLink": "https://www.facebook.com/profile.php?id=61580831261176",
+    "tiktokLink": "https://www.tiktok.com/@envo_goris",
+    "carsItemsList": [
+      {"imageUrl": "https://scontent.cdninstagram.com/v/t51.82787-15/565012593_17852127243561726_3397998917468179818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ig_cache_key=Mzc0NDU4NjEzODY4MjkxOTkyMQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyODB4ODUzLnNkci5DMiJ9&_nc_ohc=eX88kPTiFkoQ7kNvwHutNXx&_nc_oc=AdkS4uGkXX3SOEFXxadnIa3jg0UUFuNcAFVjfrynEL3Vmd_MnvWIEBBmjWM9-LpuQIo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-GBbnjuEcPjsgAz-BB7wJQ&oh=00_AfcWIu-Ve7kP1LUswkNKA8dw_ofs8_E6DfqVMH35gjfIPA&oe=6905AD76","carName": "Nom de la voiture","carNumber": "00oo000","carDriver": "Sevak T."}
+    ]
+  }
 }

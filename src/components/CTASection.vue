@@ -66,7 +66,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const props = defineProps({
   contact: {
@@ -83,15 +83,32 @@ const showAbout = ref(false);
 const draftEmailVisible = ref(false);
 const draftEmail = ref('');
 
+const phoneNumbers = computed(() => {
+  const arr = Array.isArray(props.contact.phoneNumbers) ? props.contact.phoneNumbers : [];
+  const combined = [props.contact.phoneRaw, ...arr].filter(Boolean);
+  const seen = new Set();
+  return combined.filter(n => {
+    const key = (n || '').trim();
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+});
+const primaryPhone = computed(() => phoneNumbers.value[0] || props.contact.phoneRaw || '');
+
 const generateDraftEmail = () => {
   const { name, title, company, email } = props.contact;
-  draftEmail.value = `Subject: Great to connect — next steps\n\nHello [First Name],\n\nIt was a pleasure meeting you recently. I'm ${name}, ${title} at ${company}. I appreciated our conversation about potential collaborations in the sustainable energy space and would love to explore how we might work together.\n\nSuggested next steps:\n1) A short 30-min call to align on priorities\n2) Share a one-page summary of our capabilities\n\nWould you be available for a call next week? I can be reached at ${props.contact.phoneRaw} or ${email}.\n\nBest regards,\n${name}\n${title} — ${company}\n${props.contact.website}`;
+  const nums = phoneNumbers.value;
+  const phoneLine = nums.length > 1 ? `${nums[0]} or ${nums[1]}` : (nums[0] || '');
+  draftEmail.value = `Subject: Great to connect — next steps\n\nHello [First Name],\n\nIt was a pleasure meeting you recently. I'm ${name}, ${title} at ${company}. I appreciated our conversation about potential collaborations in the sustainable energy space and would love to explore how we might work together.\n\nSuggested next steps:\n1) A short 30-min call to align on priorities\n2) Share a one-page summary of our capabilities\n\nWould you be available for a call next week? I can be reached at ${phoneLine}${email ? ' or ' + email : ''}.\n\nBest regards,\n${name}\n${title} — ${company}\n${props.contact.website}`;
   draftEmailVisible.value = true;
   showAbout.value = false;
 };
 
 const downloadVCard = () => {
   const c = props.contact;
+  const nums = phoneNumbers.value.length ? phoneNumbers.value : (c.phoneRaw ? [c.phoneRaw] : []);
+  const telLines = nums.map(n => `TEL;TYPE=WORK,VOICE:${n}`);
   const lines = [
     'BEGIN:VCARD',
     'VERSION:3.0',
@@ -99,7 +116,7 @@ const downloadVCard = () => {
     `N:${c.name.split(' ').slice(-1).join(' ')};${c.name.split(' ').slice(0,-1).join(' ')}`,
     `ORG:${c.company}`,
     `TITLE:${c.title}`,
-    `TEL;TYPE=WORK,VOICE:${c.phoneRaw}`,
+    ...telLines,
     `EMAIL;TYPE=WORK:${c.email}`,
     `ADR;TYPE=WORK:;;${c.address};;;;`,
     `URL:${c.website}`,

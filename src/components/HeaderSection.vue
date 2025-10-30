@@ -9,7 +9,7 @@
       <div class="text-sm text-gray-500">Company</div>
       <div class="flex items-center gap-2">
         <h1 class="text-lg font-semibold brand-dark">{{ contact.company }}</h1>
-        <span class="text-xs px-2 py-1 rounded-lg bg-green-50 brand-green font-medium">Sustainable Energy</span>
+        <span class="text-xs px-2 py-1 rounded-lg bg-green-50 brand-green font-medium">Energy Voyage</span>
       </div>
       <p class="mt-1 text-sm text-gray-500">{{ contact.name }} — {{ contact.title }}</p>
     </div>
